@@ -1,0 +1,46 @@
+[
+  {
+    "id": 1719508800000,
+    "title": "Simple Grilled Chicken",
+    "image": "[https://placehold.co/600x400/a8e6cf/333333?text=Grilled+Chicken](https://placehold.co/600x400/a8e6cf/333333?text=Grilled+Chicken)",
+    "description": "A juicy and flavorful grilled chicken breast, perfect for a quick and healthy meal.",
+    "servings": "2",
+    "prepTime": "10 minutes",
+    "cookTime": "15 minutes",
+    "ingredients": [
+      "2 boneless, skinless chicken breasts",
+      "1 tbsp olive oil",
+      "1 tsp paprika",
+      "Salt and pepper to taste"
+    ],
+    "instructions": [
+      "Preheat grill to medium-high heat.",
+      "Rub chicken breasts with olive oil, paprika, salt, and pepper.",
+      "Grill chicken for 6-8 minutes on each side, or until cooked through.",
+      "Let rest for 5 minutes before serving."
+    ]
+  },
+  {
+    "id": 1719508800001,
+    "title": "Classic Garden Salad",
+    "image": "[https://placehold.co/600x400/dcedc1/333333?text=Garden+Salad](https://placehold.co/600x400/dcedc1/333333?text=Garden+Salad)",
+    "description": "A crisp and refreshing garden salad with a simple vinaigrette dressing.",
+    "servings": "4",
+    "prepTime": "15 minutes",
+    "cookTime": "0 minutes",
+    "ingredients": [
+      "1 head of romaine lettuce, chopped",
+      "1 cup cherry tomatoes, halved",
+      "1/2 cucumber, sliced",
+      "1/4 red onion, thinly sliced",
+      "3 tbsp olive oil",
+      "1 tbsp red wine vinegar"
+    ],
+    "instructions": [
+      "In a large bowl, combine the chopped lettuce, cherry tomatoes, cucumber, and red onion.",
+      "In a small bowl, whisk together the olive oil and red wine vinegar. Season with salt and pepper.",
+      "Pour the dressing over the salad and toss to combine.",
+      "Serve immediately."
+    ]
+  }
+]
