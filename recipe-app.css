@@ -250,3 +250,18 @@ h1 {
   margin-top: 15px;
   margin-bottom: 8px;
 }
+
+.message {
+  margin: 25px auto;
+}
+
+.message.error {
+  color: #dc3545;
+  background-color: #e2e6ea;
+  border: 1px solid #f5c6dc;
+}
+
+.message.info,
+.message.loading {
+  color: #17a2b8;
+}
