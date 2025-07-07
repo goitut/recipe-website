@@ -1,0 +1,24 @@
+:root {
+  --light-bg: #f8f9fa;
+  --text-dark: #343a40;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.7;
+  padding: 30px 15px;
+  background-color: var(--light-bg);
+  color: var(--text-dark);
+}
+
+.recipe-container {
+  max-width: 1200px;
+  padding: 0 15px;
+  text-align: center;
+}

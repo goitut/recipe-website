@@ -10,20 +10,80 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="recipe-app.css">
 </head>
+
 <body>
-<div class="recipe-container">
+ <div class="recipe-container">
+
   <h1>Find Different Recipes Here</h1>
-  <form>
-    <input 
-    type="text"
-    id="search"
-    placeholder="search by name (eg. chicken)"
-    required >
 
-    <button type="submit" id="search button">Search</button>
-  </form>
-</div>
+    <form>
+      <input type="text" id="search" placeholder="search by name (eg. chicken)" required>
 
+      <button type="submit" id="search button">Search</button>
+      
+    </form>
+    <div class="random-button-container">
+      <button class="random-button" id="random-button">Get Random Recipe</button>
+    </div>
+
+   <div class="message" id="message-area"></div>
+
+   <div class="results-grid" id="results-grid">
+    
+    <div class="recipe-item">
+      <img src="" alt="">
+
+      <h3>Carrot Cake</h3>
+    </div>
+
+    <div class="recipe-item">
+      <img src="" alt="">
+
+      <h3>Carrot Cake</h3>
+    </div>
+
+    <div class="recipe-item">
+      <img src="" alt="">
+
+      <h3>Carrot Cake</h3>
+    </div>
+   </div>
+
+ </div>
+
+ <div class="modal-container hidden" id="recipe-modal" >
+    <div class="modal-content">
+      <button id="modal-close-btn" class="modal-close-btn">+</button>
+      <div id="recipe-detials-content">
+        <!-- Details will be here  -->
+         <h2>Carrot Cake</h2>
+         <img src="" alt="Carrot Cake">
+
+        <h3>Category: Dessert</h3>
+        <h3>Area: British</h3>
+        <h3>Ingredients</h3>
+
+        <ul>
+          <li>450ml Vegetable Oil</li>
+          <li>400g Plan Flour</li>
+        </ul>
+
+        <h3>Instructions</h3>
+
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex doloremque molestias minima, ab rem, veniam, tenetur vel optio obcaecati consequatur ipsa aut? Ratione nisi quasi pariatur asperiores exercitationem sed. Ad inventore quae sint obcaecati placeat recusandae qui nobis beatae expedita facilis, neque vel consequuntur vitae explicabo perspiciatis ab quibusdam repellendus autem corporis officia distinctio suscipit facere quaerat! Esse non accusantium repellendus aliquam fugit laudantium sit eius laborum vero iure enim, doloribus voluptas quis dolorum sed libero alias dolores! Ipsum recusandae enim nobis accusamus odio facere nesciunt, deserunt laboriosam saepe aperiam, cum eligendi velit sit fugiat. Numquam beatae fugit porro dignissimos expedita totam. In minus corporis cum voluptate necessitatibus libero ducimus temporibus fuga, reiciendis, nam blanditiis, impedit provident nesciunt aliquam harum excepturi veniam. Et consectetur quas animi, error nesciunt quidem cumque, libero tempora numquam iste reiciendis praesentium hic ex! Reiciendis minima voluptatem vero debitis vel impedit qui repellendus. At, illo obcaecati?</p>
+
+        <h3>Video REcipe</h3>
+        <div class="vidoe-wrapper">
+          <a href="" target="_blank">Watch on YouTube</a>
+        </div>
+
+        <div class="source-wrapper">
+          <a href="#" target="_blank">View Original Source</a>
+        </div>
+      </div>
+    </div>
+ </div>
+    
   <script src="main.js"></script>
 </body>
 
