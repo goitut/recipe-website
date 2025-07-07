@@ -1,6 +1,7 @@
 :root {
   --light-bg: #f8f9fa;
   --text-dark: #343a40;
+  --primary-color: #4caf50;
 }
 
 * {
@@ -22,3 +23,48 @@ body {
   padding: 0 15px;
   text-align: center;
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  letter-spacing: -1px;
+}
+
+/* styling search form  */
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+  margin-bottom: 40px;
+  max-width: 600px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+
+#search-input {
+  padding: 15px 20px;
+  font-size: 1rem;
+  flex-grow: 1;
+  border: 1px solid #e9ccef;
+  border-radius: 8px 0 0 8px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+  border-color: var(--primary-color);
+}
+
+#search-button {
+  padding: 15px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0 8px 8px 0;
+}
+
