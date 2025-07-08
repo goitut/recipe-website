@@ -1,4 +1,5 @@
 const SEARCH_API_URL = "https://www.themealdb.com/api/json/v1/1/search.php?s=";
+const RANDOM_API_URL = "https://www.themealdb.com/api/json/v1/1/random.php";
 
 const searchForm = document.getElementById("search-form");
 
@@ -29,14 +30,15 @@ async function searchRecipes(query) {
   try {
     const response = await fetch(`${SEARCH_API_URL}${query}`);
     if (!response.ok) throw new Error("Network error");
+
     const data = await response.json();
     clearMessage();
     console.log("data: ", data);
 
     if (data.meals) {
-      displayRecipe: ( data.meals);
+      displayRecipe(data.meals);
     } else {
-      showMessage: (`No recipe found for ${query},`)
+      showMessage(`No recipe found for ${query},`)
     }
     clearMessage();
     console.log("data:", data);
@@ -68,10 +70,11 @@ function displayRecipe(recipes) {
   recipes.forEach((recipe) => {
     const recipeDiv = document.createElement("div");
     recipeDiv.classList.add("recipe-item");
+    recipeDiv.dataset.id = recipe.idMeal;
 
     recipeDiv.innerHTML = `
-    <img scr="${recipe.strMealThumb}" alt="${recipe.strMeal}" loading="lazy">
-    <h3>${recipe.strMeal}</h3>
+           <img src="${recipe.strMealThumb}" alt="${recipe.strMeal}" loading="lazy">
+          <h3>${recipe.strMeal}</h3>
     `;
 
     resultsGrid.appendChild(recipeDiv);
